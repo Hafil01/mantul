@@ -4,32 +4,44 @@
   <title>Seputar Mutar</title>
   <style>
     .bungkus {
-        display: grid;
-        grid-template-columns: 2fr 2fr;
+        display: flex ;
+        flex-direction: column;
         gap: 20px;
         padding: 20px;
+        border: 10px solid rgb(1, 140, 254);
+        width: 75%;
+        margin: auto;
     }
     body {
       
       font-family: Arial, sans-serif;
       padding: 20px;
+      background-color: #fff;
+      text-align: center;
     }
-
+    .row {
+        display: flex;
+    }
     .box {
-      margin: 20px ;
-      padding: 20px;
-      width: 80%;
-      background-color: rgb(249, 251, 248);
+      flex: 1;
+      background-color: rgb(217, 235, 250);
       color: rgb(10, 175, 246);
-      border-radius: 10px;
-      box-shadow: 0 0 30px rgba(0,0,0,0.1);
+       border: 2px solid black;
+       border-radius: 10px;
+       box-shadow: 0 0 30px rgba(0,0,0,0.1);
+       padding: 20px;
+       text-align: left;
+      
     }
-
-    .box a {
-      font-weight: bold;
-      text-decoration: mintcream;
-      color: #333;
-    }
+     .box a {
+        color: black;
+        text-decoration:none ;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, 
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: large;
+        font-weight:900 ;
+      }
+    
 
     .box a:hover {
       color: rgb(224, 11, 189);
@@ -42,7 +54,8 @@
 </head>
 <body>
   <div class="bungkus">
-  <div class="box">
+    <div class="row">
+      <div class="box">
     <ul>
       <li><a href="Hafil.html">Moci Kenyal</a></li>
     </ul>
@@ -61,9 +74,10 @@
       Moci (餅 / mochi) adalah makanan tradisional dari Jepang yang sudah dikenal dan disukai di banyak negara,
       termasuk Indonesia. Di Jepang, moci bukan sekadar makanan, tapi juga simbol keberuntungan, harapan, dan umur panjang.
     </p>
+    </div>
   </div>
-
-  <div class="box">
+<div class="row">
+   <div class="box">
     <ul>
       <li><a href="Articel.html">Kenyalnya Bikin Happy</a></li>
     </ul>
@@ -79,7 +93,8 @@
         <p>Sinar gamma ($\gamma$) adalah bentuk radiasi elektromagnetik dengan frekuensi tertinggi
              dan energi tertinggi, menjadikannya sangat menarik sekaligus berpotensi bahaya.Berikut adalah 
             beberapa fakta menarik tentang sinar gamma.</p>
+          </div>
        </div>
-    </div>
+     </div>
    </body>
 </html>
